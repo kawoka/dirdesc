@@ -10,7 +10,7 @@
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "bin": {
-    "dirdesc": "index.js"
+    "dirdesc": "dist/index.js"
   },
   "author": "kawoka",
   "repository": "https://github.com/kawoka/dirdesc",
