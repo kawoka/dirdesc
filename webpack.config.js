@@ -6,6 +6,7 @@ const path = require('path')
 const { env } = require('process')
 
 module.exports = merge(sharedConfig, {
+  target: 'node',
   mode: 'production',
   entry: './index.js',
   output: {
@@ -13,6 +14,10 @@ module.exports = merge(sharedConfig, {
     path:  path.join(__dirname, 'dist')
   },
   stats: 'normal',
+  node: {
+    process: true,
+    global: true,
+  },
   plugins: [
     new webpack.EnvironmentPlugin(JSON.parse(JSON.stringify(env))),
     new CaseSensitivePathsPlugin()
