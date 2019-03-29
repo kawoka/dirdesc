@@ -9,13 +9,19 @@ Dirdesc is directory structure diagram generator from `.dirdesc` file
 
 ## How to use
 - put `.dirdesc` file on project directories and write description
-`$ echo "some directory description" > path/to/dir/.dirdesc`
+```
+$ echo "some directory description" > path/to/dir/.dirdesc
+```
 
 - run `dirdesc` command on project root
-`$ dirdesc`
+```
+$ dirdesc
+```
 
 - run `dirdesc` command on project root
-`$ dirdesc`
+```
+$ dirdesc
+```
 
 - Generate Directory Structure with description
 
