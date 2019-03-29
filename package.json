@@ -1,6 +1,6 @@
 {
   "name": "dirdesc",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Dirdesc is directory structure diagram generator from .dirdesc file",
   "main": "index.js",
   "scripts": {
