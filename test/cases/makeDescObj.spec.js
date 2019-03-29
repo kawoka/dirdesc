@@ -3,7 +3,6 @@ import expect from 'expect.js'
 
 
 describe('makeDescObj', () => {
-
   const expected = {
     "dir1": {
       "desc": "",
@@ -30,6 +29,27 @@ describe('makeDescObj', () => {
     },
     "dir2": {
       "desc": "this is root dir2"
+    },
+    "dir3": {
+      "children": {
+        "child-dir2": {
+          "children": {
+            "grand-child-dir": {
+              "desc": "some description here..."
+            }
+          }
+        },
+        "child-dir1": {
+          "children": {
+            "grand-child-dir1": {
+              "desc": "some description here..."
+            },
+            "grand-child-dir2": {
+              "desc": "some description here..."
+            }
+          }
+        }
+      }
     }
   }
 
@@ -37,14 +57,3 @@ describe('makeDescObj', () => {
     expect(test()).to.eql(expected)
   })
 })
-
-/*
-type descobj : {
-  "name": "dir",
-  "desc": "",
-  "children": [
-    ...descobj
-  ]
-}
-*/
-
