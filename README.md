@@ -4,6 +4,21 @@
 # dirdesc
 Dirdesc is directory structure diagram generator from `.dirdesc` file
 
+## install
+`yarn global add dirdesc`
+
+## How to use
+- put `.dirdesc` file on project directories and write description
+`$ echo "some directory description" > path/to/dir/.dirdesc`
+
+- run `dirdesc` command on project root
+`$ dirdesc`
+
+- run `dirdesc` command on project root
+`$ dirdesc`
+
+- Generate Directory Structure with description
+
 ```
 root
 |
@@ -21,7 +36,3 @@ root
       |
       └- grand-child-dir2 # some description here...
 ```
-
-## install
-
-## How to use
