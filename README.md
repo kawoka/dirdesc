@@ -18,11 +18,6 @@ $ echo "some directory description" > path/to/dir/.dirdesc
 $ dirdesc
 ```
 
-- run `dirdesc` command on project root
-```
-$ dirdesc
-```
-
 - Generate Directory Structure with description
 
 ```
