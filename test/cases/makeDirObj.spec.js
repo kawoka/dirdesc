@@ -1,8 +1,7 @@
-import {test} from '../lib/index'
 import expect from 'expect.js'
+import {makeDirObj} from '../../lib/makeDirObj'
 
-
-describe('makeDescObj', () => {
+describe('makeDirObj', () => {
   const expected = {
     "dir1": {
       "desc": "",
@@ -53,7 +52,10 @@ describe('makeDescObj', () => {
     }
   }
 
-  it('return string', () => {
-    expect(test()).to.eql(expected)
+  it('return dir structuer object', (done) => {
+    makeDirObj('test/dummy-project').then((result) => {
+      expect(result).to.eql(expected)
+      done()
+    })
   })
 })
