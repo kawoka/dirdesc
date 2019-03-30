@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/kawoka/dirdesc.svg?branch=master)](https://travis-ci.org/kawoka/dirdesc)
 [![Coverage Status](https://coveralls.io/repos/github/kawoka/dirdesc/badge.svg?branch=master)](https://coveralls.io/github/kawoka/dirdesc?branch=master)
+[![npm version](https://badge.fury.io/js/dirdesc.svg)](https://www.npmjs.com/package/dirdesc)
 
 # dirdesc
 Dirdesc is directory structure diagram generator from `.dirdesc` file
